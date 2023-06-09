@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ejercicios Javascript</h1>
+    <h3>triangulo</h3>
+    <script>
+      for (let i = 0; i <= 7; i++) {
+        for (let j = 1; j <= i; j++) {
+          document.write(" #");
+        }
+        document.write("<br>");
+      }
+    </script>
+    <h3>FizzBuzz</h3>
+    <p>
+      Escribe un programa que use console.log para imprimir todos los números de
+      1 a 100, con dos excepciones. Para números divisibles por 3, imprime
+      "Fizz" en lugar del número, y para los números divisibles por 5 (y no 3),
+      imprime "Buzz" en su lugar. Cuando tengas eso funcionando, modifica tu
+      programa para imprimir "FizzBuzz", para números que sean divisibles entre
+      3 y 5 (y aún imprimir "Fizz" o "Buzz" para números divisibles por solo uno
+      de ellos).
+    </p>
+    <script>
+      for (let i = 1; i <= 100; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+          document.write("FizzBuzz, ");
+        } else if (i % 3 == 0) {
+          document.write("Fizz, ");
+        } else if (i % 5 == 0) {
+          document.write("Buzz, ");
+        } else {
+          document.write(i + ", ");
+        }
+      }
+    </script>
+    <h3>Tablero de Ajedrez</h3>
+    <p>
+      Escribe un programa que cree un string que represente una cuadrícula de 8
+      × 8, usando caracteres de nueva línea para separar las líneas. En cada
+      posición de la cuadrícula hay un espacio o un carácter "#". Los caracteres
+      deberían de formar un tablero de ajedrez.
+    </p>
+    <script>
+      let cadena = "";
+      for (let i = 1; i <= 8; i++) {
+        for (let j = 1; j <= 8; j++) {
+          if (i % 2 == 0) {
+            if (j % 2 == 0) cadena += "=";
+            else cadena += "#";
+          } else {
+            if (j % 2 == 0) cadena += "#";
+            else cadena += "=";
+          }
+        }
+        cadena += '<br>';
+      }
+      document.write(cadena);
+    </script>
+  </body>
+</html>
