@@ -4,5 +4,11 @@ function saludar(nombre){
 function saludarHolaMundo(){
     return 'Hello wordl!';
 }
-module.exports.saludar = saludar;
-module.exports.saludarHolaMundo = saludarHolaMundo;
+//Primera forma de exportar
+/* module.exports.saludar = saludar;
+module.exports.saludarHolaMundo = saludarHolaMundo; */
+//Segunda forma de exportar
+module.exports ={
+    saludar: saludar,
+    saludarHolaMundo: saludarHolaMundo
+}
