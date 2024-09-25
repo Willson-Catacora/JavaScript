@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#carouselExampleIndicators img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption h1 {
+    position: absolute;
+    top: 1100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.carousel-caption p {
+    position: absolute;
+    top: 1200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: rgb(10, 10, 10);
+    font-family: 'Roboto', sans-serif;
+}
+
+.carousel-text-container {
+    position: relative;
+    z-index: 1;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product button {
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.product button:hover {
+    background-color: #33ffff;
+}
